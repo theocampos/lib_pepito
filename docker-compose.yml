@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:latest
+    tty: true
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ${DATA_PATH_HOST}postgres/postgres_data:/var/lib/postgresql/data
+    restart: always
+    shm_size: 128mb
+
+  adminer:
+    image: adminer
+    depends_on:
+      - postgres
+    restart: always
