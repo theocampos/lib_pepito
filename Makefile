@@ -9,6 +9,8 @@
 ##
 
 SRC		=	src/init_steam_turbine.c	\
+			src/read_turbine_config.c	\
+			src/turbine_remote_access.c	\
 
 OBJ = $(SRC:.c=.o)
 
