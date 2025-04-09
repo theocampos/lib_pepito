@@ -8,7 +8,7 @@
 ## Last update	Mon	Jan	1	11:21:42	1970	Théo Poche
 ##
 
-SRC		=	main.c	\
+SRC		=	src/init_steam_turbine.c	\
 
 OBJ = $(SRC:.c=.o)
 
