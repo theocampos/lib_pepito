@@ -11,6 +11,8 @@
 SRC		=	src/init_steam_turbine.c	\
 			src/read_turbine_config.c	\
 			src/turbine_remote_access.c	\
+			src/turbine_temperature.c	\
+			src/run_turbine.c 	\
 
 OBJ = $(SRC:.c=.o)
 
@@ -20,7 +22,7 @@ LDFLAGS += -shared
 
 CFLAGS += -Wall -Wextra -fPIC
 
-CPPFLAGS += -iquote ./include
+CPPFLAGS += -iquote ./includes
 
 all: $(NAME)
 

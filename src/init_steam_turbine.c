@@ -5,9 +5,7 @@
 ** init_steam_turbine
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "pepito.h"
 
 void init_steam_turbine() {
     srand(time(NULL));

@@ -5,11 +5,7 @@
 ** turbine_remote_access
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <string.h>
+#include "pepito.h"
 
 void turbine_remote_access()
 {

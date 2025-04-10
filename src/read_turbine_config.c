@@ -5,9 +5,7 @@
 ** read_turbine_config
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "pepito.h"
 
 void read_turbine_config()
 {
